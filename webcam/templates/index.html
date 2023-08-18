@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<head>
+	<!-- templatemo 419 black white -->
+    <!-- 
+    Black White
+    http://www.templatemo.com/preview/templatemo_419_black_white
+    -->
+	<title>Home</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+
+	{% load static %}
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'js/script.js' %}" rel="script">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+
+	 <link
+	 rel="stylesheet"
+	 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous"
+	 referrerpolicy="no-referrer"
+ />
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="css/swiper-bundle.min.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>	
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+ <style>
+	.slide-container{
+  max-width: 1400px;
+  width: 140%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.service{
+	width: 25%;
+	border-radius: 5%;
+}
+.card{
+  border-radius: 25px;
+  background-color: #FFF;
+  padding:0;
+}
+.swiper-pagination-bullet{
+	background-color:white !important;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070F4;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #4070F4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+
+
+
+.fa-brands fa-linkedin fa_custom{
+	color: rgb(255, 255, 255);
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+.swiper-pagination-bullet-active-main{
+	height: 10px !important;
+	width: 10px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+ </style>
+ 
+</head>
+<body>
+  <!-- header start -->
+  <header class="header">
+	<div class="container">
+	   <div class="header-main">
+		  <div class="logo">
+			 <img src="{% static 'image/logo.png' %}" class="logo-new">
+		  </div>
+		  <div class="open-nav-menu">
+			 <span></span>
+		  </div>
+		  <div class="menu-overlay">
+		  </div>
+		  <!-- navigation menu start -->
+		  <nav class="nav-menu">
+
+			<ul class="menu">
+			   
+			   
+			   <li class="menu-item">
+				  <a href="http://127.0.0.1:8000/index">Home</a>
+			   </li>
+			   <li class="menu-item menu-item-has-children">
+				<a href="#" data-toggle="sub-menu">Cameras <i class="plus"></i></a>
+				<ul class="sub-menu">
+					<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+					<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+					
+				</ul>
+			 </li>
+			   
+			   <li class="menu-item menu-item-has-children">
+				  <a href="#" data-toggle="sub-menu">Analysis <i class="plus"></i></a>
+				  <ul class="sub-menu">
+					  <li class="menu-item"><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+					  <li class="menu-item"><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+					  
+				  </ul>
+			   </li>
+			   <li class="menu-item">
+				  <a href="http://127.0.0.1:8000/index/settings">Settings</a>
+			   </li>
+			   <li class="menu-item">
+				<a href="" >About Us</a>
+				</li>
+			   
+			</ul>
+		  </nav>
+		  <!-- navigation menu end -->
+	   </div>
+	</div>
+ </header>
+ <!-- header end -->
+
+<!-- home section start -->
+<section class="home-section">
+	<img class="banner" src="{% static 'image/banner.jpg' %}">
+	
+</section>
+<div class="hero-content">
+	<img src="{% static 'image/eye-svgrepo-com (1).svg' %}" class="eye-svg">
+	
+	<h1 class="hero-title">NAYAN NIRIKSHAN</h1>
+	<p class="hero-desc">Violence Detection System using Surveillance Camera</p>
+	<div class="container-load">
+		<div class="typewriter2" style="color: white;">Our camera's unblinking eye captures every moment, ensuring that nothing goes unseen</div>
+	  </div>
+</div>
+
+<section class="project-info">
+	<h1 class="title">Our Project</h1>
+	<hr class="seperator">
+	<p class="project-description">The Nayan Nirikshan system is an advanced surveillance system that uses deep learning techniques to detect and recognize different scenes, including violence, car crashes, and fire. The system is designed to enhance security and safety in various environments, such as office buildings, public spaces, and parking lots. By analyzing real-time video feeds from surveillance cameras, the system can automatically identify potential threats and alert security personnel, reducing response time and improving situational awareness. The system is built using state-of-the-art deep learning models, including YOLO, Movenet, and CNN, which enable it to accurately recognize and classify various objects and events. The system's ability to recognize multiple scenes makes it a versatile tool for security and safety applications, providing a comprehensive solution for surveillance and threat detection.</p>
+</section>
+
+<section class="technologies-used ">
+<h1>Technologies Used</h1>
+<hr>
+<div class="service-container">
+	
+	<div class="row">
+	  <div class="service" >
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="" class="tech-img">
+		<h2>Python</h2>
+		<p>
+			Popular programming language for ML
+		</p>
+	  </div>
+	  <div class="service">
+		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" alt="" class="tech-img">
+
+		<h2>React</h2>
+		<p>
+			Popular UI library
+		</p>
+	  </div>
+	  <div class="service">
+		<img src="https://previews.123rf.com/images/putracetol/putracetol1805/putracetol180506916/101828968-movement-run-logo-icon-design.jpg" alt="" class="tech-img">
+		<h2>Movenet</h2>
+		<p>
+			Lightweight neural network architecture for real-time human pose estimation and movement tracking.
+		</p>
+	  </div>
+	  <div class="service">
+		<img src="https://i.pinimg.com/originals/44/04/ba/4404baaea65f8ba3734d75388649588a.png" alt="" class="tech-img">
+		<h2>YOLO</h2>
+		<p>
+			Object detection system for real-time applications
+		</p>
+	  </div>
+	  
+	</div>
+	<div class="row">
+		<div class="service">
+		  <img src="https://d1wrxu8gicsgam.cloudfront.net/wp-content/files/django-logo-big.jpg" alt="" class="tech-img">
+		  <h2>Django</h2>
+		  <p>
+			Python web framework
+		  </p>
+		</div>
+		<div class="service">
+		  <img src="https://i.pinimg.com/474x/16/22/79/162279bbc02af2531f27e892075ca650.jpg" alt="" class="tech-img">
+  
+		  <h2>CNN</h2>
+		  <p>
+			Common neural network for image processing
+		  </p>
+		</div>
+		<div class="service">
+		  <img src="https://static.vecteezy.com/system/resources/previews/017/221/839/non_2x/telegram-logo-transparent-free-png.png" alt="" class="tech-img">
+		  <h2>Telegram</h2>
+		  <p>
+			Cloud-based messaging app with advanced privacy features
+		  </p>
+		</div>
+		<div class="service">
+		  <img src="https://p92.com/binaries/content/gallery/p92website/technologies/htmlcssjs-overview.png" alt="" class="tech-img">
+		  <h2>HTML, CSS, JAVASCRIPT</h2>
+		  <p>
+			Fundamental web development technologies
+		  </p>
+		</div>
+		
+	  </div>
+  </div>
+
+</section>
+
+<section class="teams">
+	<h1>Meet Our Teams</h1>
+	<hr>
+	<div class="teams-inner">
+		<div class="team-card">
+			<img src="{%static 'image/subhash.png' %}" alt="" class="team-img">
+			<h2 class="team-name">Subhash B S</h2>
+			<div class="team-socials">
+				<a href="https://instagram.com/subhash_bs_?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+				<i class="fa-brands fa-linkedin fa_custom"></i>
+			</div>
+		</div>
+		<div class="team-card">
+			<img src="{%static 'image/nitya.jpg' %}" alt="" class="team-img">
+			<h2 class="team-name">Nityanand Kumar</h2>
+			<div class="team-socials">
+				<a href="https://instagram.com/ambidex_nitya?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+				<i class="fa-brands fa-linkedin fa_custom"></i>
+			</div>
+		</div>
+		<div class="team-card">
+			<img src="{%static 'image/sumanth.webp' %}" alt="" class="team-img">
+			<h2 class="team-name">Sumanth Hegde</h2>
+			<div class="team-socials">
+				<a href="https://instagram.com/sumanth_1302?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+				<i class="fa-brands fa-linkedin fa_custom"></i>
+			</div>
+		</div>
+		<div class="team-card">
+			<img src="{%static 'image/harsha.jpg' %}" alt="" class="team-img">
+			<h2 class="team-name">Harsha R</h2>
+			<div class="team-socials">
+				<a href="https://instagram.com/harshar_10?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fab fa-instagram"></i></a>
+				<i class="fa-brands fa-linkedin fa_custom"></i>
+			</div>
+		</div>
+		
+
+	</div>
+
+</section>
+
+
+<section class="features">
+	<h1>Features</h1>
+	<hr>	
+	<h3 >Our system has the ability to analyze complex image scenes and generate actionable insights in real-time</h3>
+	<br>
+	<h3># Outdoor Cases</h3>
+	<hr>
+	<div class="slide-container swiper">
+		<div class="slide-content">
+			<div class="card-wrapper swiper-wrapper">
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/building.jpeg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Buildings</h2>
+				
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/istockphoto-1287658775-640x640.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">People Walking on a Street</h2>
+				
+	
+						<!-- <button class="button" style="background:#573f7f;">View More</button> -->
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/Screen-Shot-2014-11-21-at-111054.png' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Car Crash</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/carfire.png' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Fire on a Street</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/CCTV-from-Liverpool.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Fight on a Street</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/road.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Cars on a Road</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/empty_road.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Road</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/eight_col_carjack.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Car Parking Area</h2>
+					</div>
+				</div>	
+			</div>
+		</div>
+	
+		<div class="swiper-button-next swiper-navBtn" style="color:white;"></div>
+		<div class="swiper-button-prev swiper-navBtn" style="color:white;"></div>
+		<div class="swiper-pagination" style="color:white;"></div>
+	</div>
+
+	<h3># Indoor Cases</h3>
+	<hr>
+
+	<div class="slide-container swiper">
+		<div class="slide-content">
+			<div class="card-wrapper swiper-wrapper">
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/empty_office.jpeg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Office Environment</h2>		
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/office.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">People Walking in Office</h2>
+
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/people_talking.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">People Talking</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/fire_office.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Fire in Office</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/office_fight.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Violence in Office</h2>
+					</div>
+				</div>
+				<div class="card swiper-slide">
+					<div class="features-img">
+						<img src="{% static 'image/group_people.jpg' %}" alt="" style="position: static; width: 100%; transform: none;">
+					</div>
+	
+					<div class="card-content">
+						<h2 class="name" style="font-size:2.3rem">Group of People</h2>
+					</div>
+				</div>
+					
+			</div>
+		</div>
+	
+		<div class="swiper-button-next swiper-navBtn" style="color:white;"></div>
+		<div class="swiper-button-prev swiper-navBtn" style="color:white;"></div>
+		<div class="swiper-pagination" style="color:white;"></div>
+	</div>
+</section>
+
+<!-- home section end -->
+
+
+	<!-- <div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<br>
+			<div style="padding-left: 35%; padding-top: 25%;">
+				<img src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            class="img_logo" alt="" width="60%" height="60%" style="border-radius: 40%; z-index: 2;">
+				<h3>Subhash</h3>
+			</div>	
+			<br> -->
+			<!-- <div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+					<li><a href="http://127.0.0.1:8000/index">Home</a></li>			  
+  
+					<li><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+  
+					<li><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/settings">Settings</a></li>
+				  </ul>
+			</div>
+		</div> <!-- left section -->
+		<!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 style="padding-left: 40%;">Nayan Nirikshan</h1>	
+			<div class="tm-right-inner-container">
+				<h1 class="templatemo-header"></h1>
+				<article class="templatemo-item">
+					<h2>Home</h2>
+				</article><hr> --> 
+				
+				<!-- <div class= "content" style="width: 800px; height: 400px;">
+					<img src="{% static 'image/logo.png' %}" width="60%" height="60%" style="border-radius: 40%; z-index: 2;">
+					  
+				</div> -->
+
+				<footer>
+					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; Nayan Nirikshan <!-- Credit: www.templatemo.com --></p>
+					
+				</footer>
+			</div>	
+		</div> <!-- right section -->
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+	<script src="https://kit.fontawesome.com/86098cddac.js" crossorigin="anonymous"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+    var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+ 
+	  </script>
+</body>
+</html>

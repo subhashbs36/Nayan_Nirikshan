@@ -1,0 +1,14 @@
+
+Django==3.2.5
+numpy==1.20.3
+# pyheif
+requests==2.26.0
+clip-by-openai
+matplotlib==3.4.2
+whatimage==0.0.3
+Pillow==8.3.2
+opencv-python==4.5.3.56
+pyaml
+jupyter
+telepot
+

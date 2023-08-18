@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+	<!-- templatemo 419 black white -->
+    <!-- 
+    Black White
+    http://www.templatemo.com/preview/templatemo_419_black_white
+    -->
+	<title>Camera 1</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+
+	{% load static %}
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		   <div class="header-main">
+			  <div class="logo">
+				 <img src="{% static 'image/logo.png' %}" class="logo-new">
+			  </div>
+			  <div class="open-nav-menu">
+				 <span></span>
+			  </div>
+			  <div class="menu-overlay">
+			  </div>
+			  <!-- navigation menu start -->
+			  <nav class="nav-menu">
+				<div class="close-nav-menu">
+				   <img src="img/close.svg" alt="close">
+				</div>
+				<ul class="menu">
+				   
+				   
+				   <li class="menu-item">
+					  <a href="http://127.0.0.1:8000/index">Home</a>
+				   </li>
+				   <li class="menu-item menu-item-has-children">
+					<a href="#" data-toggle="sub-menu">Cameras <i class="plus"></i></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+						<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+						
+					</ul>
+				 </li>
+				   
+				   <li class="menu-item menu-item-has-children">
+					  <a href="#" data-toggle="sub-menu">Analysis <i class="plus"></i></a>
+					  <ul class="sub-menu">
+						  <li class="menu-item"><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+						  <li class="menu-item"><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+						  
+					  </ul>
+				   </li>
+				   <li class="menu-item">
+					  <a href="http://127.0.0.1:8000/index/settings">Settings</a>
+				   </li>
+				</li>
+				<li class="menu-item">
+				 <a href="http://127.0.0.1:8000/index">About Us</a>
+				 </li>
+				   
+				</ul>
+			  </nav>
+			  <!-- navigation menu end -->
+		   </div>
+		</div>
+	 </header>
+	 <!-- header end -->
+	 
+	
+	<section class="cam-1-hero">
+		<div class="cam-1-hero-col-1">
+			<h1 class="cc1-t">NAYAN NIRIKSHAN</h1>
+			<p class="cc1-p">Nayan Nirikshan is a versatile violance detection that can detect real time violence using surveillance camera</p>
+			<div class="container-load">
+				<div class="typewriter">Detecting Camera</div>
+			  </div>
+		</div>
+		<div class="loader">
+			
+			<lottie-player src="https://lottie.host/ff5d881f-b75f-4aa0-a236-2c82ca474fca/5XyLoVM0Zx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+			
+		</div>
+		<div class="cam-1-hero-col-2">
+			<div id="closed"></div>
+	<a href="#popup" class="popup-link">Access Camera 1</a>
+	<div class="popup-wrapper" id="popup">
+	<div class="popup-container">
+		
+			
+		<img src="{% url 'video-feed-1' %}" alt="Video Not loaded"></br></br>
+	<center>
+		
+
+</center>
+<a class="popup-close" href="#closed">X</a>
+</div>
+</div>
+
+			
+			<!-- <img src="{% url 'video-feed-1' %}" alt="Video Not loaded"></br></br> -->
+		</div>
+	</section>
+	<script src="{% static 'js/script.js' %}"></script>
+	<!-- <div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">Nayan</h1>	
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+					<li><a href="http://127.0.0.1:8000/index">Home</a></li>			  
+  
+					<li><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+  
+					<li><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/settings">Settings</a></li>
+				  </ul>
+			</div>
+		</div> 
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60">Nirikshan</h1>	
+			<div class="tm-right-inner-container">
+
+				<h1 class="templatemo-header"></h1> -->
+
+				<!-- 				
+				{% load static %}
+				<img src="{% static 'images/ocst.jpg' %}" alt="ocst" class="img-thumbnail"> -->
+		
+				<!-- <article class="templatemo-item">
+					<h2>Camera 1</h2>
+	
+				</article><hr>
+				<div style="width: 800px; height: 400px;">
+					<p>
+						<img src="{% url 'video-feed-1' %}" alt="Video Not loaded"></br></br>	
+					</p>
+				</div>
+
+				<footer>
+					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; Nayan Nirikshan </p>
+					</br>
+					
+				</footer>
+			</div>	
+		</div> 
+	</div>	 -->
+</body>
+</html>

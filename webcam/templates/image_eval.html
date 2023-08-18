@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<head>
+	<!-- templatemo 419 black white -->
+    <!-- 
+    Black White
+    http://www.templatemo.com/preview/templatemo_419_black_white
+    -->
+	<title>Camera 2</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css">
+
+	{% load static %}
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/templatemo_style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/styles.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/image.css' %}" rel="stylesheet" type="text/css">
+	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		   <div class="header-main">
+			  <div class="logo">
+				 <img src="{% static 'image/logo.png' %}" class="logo-new">
+			  </div>
+			  <div class="open-nav-menu">
+				 <span></span>
+			  </div>
+			  <div class="menu-overlay">
+			  </div>
+			  <!-- navigation menu start -->
+			  <nav class="nav-menu">
+				<div class="close-nav-menu">
+				   <img src="img/close.svg" alt="close">
+				</div>
+				<ul class="menu">
+				   
+				   
+				   <li class="menu-item">
+					  <a href="http://127.0.0.1:8000/index">Home</a>
+				   </li>
+				   <li class="menu-item menu-item-has-children">
+					<a href="#" data-toggle="sub-menu">Cameras <i class="plus"></i></a>
+					<ul class="sub-menu">
+						<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+						<li class="menu-item"><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+						
+					</ul>
+				 </li>
+				   
+				   <li class="menu-item menu-item-has-children">
+					  <a href="#" data-toggle="sub-menu">Analysis <i class="plus"></i></a>
+					  <ul class="sub-menu">
+						  <li class="menu-item"><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+						  <li class="menu-item"><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+						  
+					  </ul>
+				   </li>
+				   <li class="menu-item">
+					  <a href="http://127.0.0.1:8000/index/settings">Settings</a>
+				   </li>
+				</li>
+				<li class="menu-item">
+				 <a href="http://127.0.0.1:8000/index">About Us</a>
+				 </li>
+				   
+				</ul>
+			  </nav>
+			  <!-- navigation menu end -->
+		   </div>
+		</div>
+	 </header>
+
+	 <section class="image-eval p-200">
+		<h1>How does Image Analysis Work?</h1>
+		<div class="timeline">
+			<div class="container left">
+			  <div class="content">
+				<h2>Input Image</h2>
+				<p>The first step is to provide an input image to the system for image analysis</p>
+			  </div>
+			</div>
+			<div class="container right">
+			  <div class="content">
+				<h2>Preprocessing Image Segmentation</h2>
+				<p>Image segmentation is a commonly used technique in digital image processing and analysis to partition an image into multiple parts or regions, often based on the characteristics of the pixels in the image.</p>
+			  </div>
+			</div>
+			<div class="container left">
+			  <div class="content">
+				<h2>Feature Extraction</h2>
+				<p>Feature extraction refers to the process of transforming raw data into numerical features that can be processed while preserving the information in the original data set.</p>
+			  </div>
+			</div>
+			<div class="container right">
+			  <div class="content">
+				<h2>Image Classification</h2>
+				<p>Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a model to recognize them using labeled example photos.</p>
+			  </div>
+			</div>
+			<div class="container left">
+			  <div class="content">
+				<h2>Post Processing</h2>
+				<p>Postprocessing procedures usually include various pruning routines, rule filtering, or even knowledge integration. All these procedures provide a kind of symbolic filter for noisy and imprecise knowledge derived by an inductive algorithm.</p>
+			  </div>
+			</div>
+			
+		<div class="image-eval-inner">
+			
+				
+			</div>
+		</div>
+	 </section>
+
+	 <section class="card-section p-200">
+		<h1>What Our System Can Do ?</h1>
+		<div class="container-2">
+
+
+			<div class="card">
+				<img src="{% static 'image/CCTV-from-Liverpool.jpg' %}" alt="Violence">
+				<div class="card-body">
+					<h2 class="card-title">Violence Detection</h2>
+					<a href="#" class="btn">Explore</a>
+				</div>
+			</div>
+	 
+	 
+			<div class="card">
+			 <img src="{% static 'image/carfire.png' %}" alt="Fire">
+			 <div class="card-body">
+				 <h2 class="card-title">Fire Detection</h2>
+				
+				 <a href="#" class="btn">Explore</a>
+			 </div>
+		 </div>
+	 
+	 
+		 <div class="card">
+			 <img src="{% static 'image/Screen-Shot-2014-11-21-at-111054.png' %}" alt="Accident">
+			 <div class="card-body">
+				 <h2 class="card-title">Accident Detection</h2>
+				
+				 <a href="#" class="btn">Explore</a>
+			 </div>
+		 </div>
+		</div>
+	 </section>
+
+	 <section class="upload-form">
+		<div class="form-inner">
+			{% if not img_obj %}
+					<form method = "post" action="{% url 'model_eval' %}" enctype="multipart/form-data" class="img-upload-form">
+						{% csrf_token %}
+						<label for="avatar">Upload a Image to Evaluate</label>
+						<input type="file" id="img" name="img" accept="image/png, image/jpeg" id="image">
+						<button type="submit">Upload</button>
+					</form>
+		</div>
+					
+					{% else %}
+						<img src={{img_obj.img.url}} class="uploaded-img">
+						<img src="{% static predict_img %}" class="result-img">
+						
+					{% endif %}
+					
+					
+	 </section>
+	 <div class="img-sep" style="position: relative;">
+		<div class="img-sep-inner">
+			<h2>Original Image</h2>
+			<h2>Analysed Image</h2>
+		</div>
+	 </div>
+
+	<!-- <div class="templatemo-container">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 black-bg left-container">
+			<h1 class="logo-left hidden-xs margin-bottom-60">Nayan</h1>	
+			<div class="tm-left-inner-container">
+				<ul class="nav nav-stacked templatemo-nav">
+					<li><a href="http://127.0.0.1:8000/index">Home</a></li>			  
+  
+					<li><a href="http://127.0.0.1:8000/index/camera1">Camera 1</a></li>
+  
+					<li><a href="http://127.0.0.1:8000/index/camera2">Camera 2</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/model_eval">Image Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/video_analysis">Video Analysis</a></li>
+
+					<li><a href="http://127.0.0.1:8000/index/settings">Settings</a></li>
+				  </ul>
+			</div> -->
+		<!-- </div> <!-- left section -->
+		<!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 white-bg right-container">
+			<h1 class="logo-right hidden-xs margin-bottom-60">Nirikshan</h1>	
+			<div class="tm-right-inner-container">
+
+				<h1 class="templatemo-header"></h1>
+
+				<!-- 				
+				{% load static %}
+				<img src="{% static 'images/ocst.jpg' %}" alt="ocst" class="img-thumbnail"> -->
+		
+				<!-- <article class="templatemo-item">
+					<h2>Image Analysis</h2>
+				</article><hr>
+				<div style="width: 800px; height: 400px;">
+					{% if not img_obj %}
+					<form method = "post" action="{% url 'model_eval' %}" enctype="multipart/form-data">
+						{% csrf_token %}
+						<label for="avatar">Upload a Image to Evaluate</label>
+						<input type="file" id="img" name="img" accept="image/png, image/jpeg">
+						<button type="submit">Upload</button>
+					</form>
+					{% else %}
+						<img src={{img_obj.img.url}} class="uploaded-img">
+						<img src="{% static predict_img %}" class="result-img">
+					{% endif %} -->
+				<!-- </div> -->
+				<footer>
+					<p class="col-lg-6 col-md-6 col-sm-12 col-xs-12 templatemo-copyright">Copyright &copy; Nayan Nirikshan<!-- Credit: www.templatemo.com --></p>
+				</footer>
+			</div>	
+		</div> <!-- right section -->
+	</div>	
+	<script src="{% static 'js/script.js' %}"></script>
+	<script>
+		document.querySelector(".logo-new").addEventListener("click",()=>{
+        window.location.href='http://127.0.0.1:8000/index/';
+    })
+
+	
+	
+
+
+
+	</script>
+</body>
+</html>
