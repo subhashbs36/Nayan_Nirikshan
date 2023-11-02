@@ -45,8 +45,8 @@ camera2_default = '1'
 timeout = '10'
 
 
-tel_id = '5895458028:AAFhA94qkkuWnTu2OmH4mbp0dlT38mEOCfk'
-tel_id_default = '5895458028:AAFhA94qkkuWnTu2OmH4mbp0dlT38mEOCfk'
+tel_id = 'Your Telegram Bot id'
+tel_id_default = 'Your Telegram Bot id'
 
 video_path = None
 
