@@ -29,6 +29,11 @@ By analyzing real-time video feeds from surveillance cameras, the system can aut
 - **Image Analysis**: Supports uploading and analyzing images for scene classification
 - **Configurable Settings**: Customize camera sources, alert timeouts, and notification settings
 
+![Sample Input Video](static/image/Picture2.png)
+
+![Sample Input Video](static/image/Picture4.jpg)
+![Sample Input Video](static/image/Picture5.jpg)
+
 ## Technologies Used
 
 - **Python**: Core programming language
